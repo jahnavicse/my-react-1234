@@ -1,10 +1,11 @@
 {
-  "name": "react-compiler",
+  "name": "app",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "16.12.0",
     "react-bootstrap": "1.0.0-beta.16",
     "react-dom": "16.12.0",
@@ -14,10 +15,10 @@
     "typescript": "3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
++   "deploy":  "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "browserslist": [
     ">0.2%",
